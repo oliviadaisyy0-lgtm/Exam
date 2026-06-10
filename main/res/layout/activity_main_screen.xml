@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    tools:context=".MainScreen">
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="79dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/add_gear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPack"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editItem"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="77dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_item"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/editCategory"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_category"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editItem"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_quantity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editCategory"
+        tools:ignore="Autofill,LabelFor" />
+
+    <EditText
+        android:id="@+id/editComments"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_comment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editQuantity"
+        tools:ignore="Autofill,LabelFor" />
+
+    <Button
+        android:id="@+id/buttonPack"
+        android:layout_width="174dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/add_to_packing_lists"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editComments"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/exits"
+        app:layout_constraintStart_toEndOf="@+id/buttonAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPack" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
